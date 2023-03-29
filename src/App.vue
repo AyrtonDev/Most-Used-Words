@@ -1,23 +1,25 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <v-app-bar app color="primary">
+        <v-toolbar-title>Most Used Words</v-toolbar-title>
+      </v-app-bar>
+      <HomePage />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HomePage from "./views/HomePage.vue";
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    HomePage,
   },
 
   data: () => ({
     //
   }),
-}
+};
 </script>
